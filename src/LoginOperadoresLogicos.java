@@ -33,11 +33,14 @@ public class LoginOperadoresLogicos {
       }
     }
 
-    if( isAuthenticated ) {
+    String msg = isAuthenticated ? "Bienvenido " + givenUser : "No es correcta la autenticación\nUsername o password incorrectos";
+    System.out.println("msg = " + msg);
+
+    /*if( isAuthenticated ) {
       System.out.println("Bienvenido " + givenUser);
     } else {
       System.out.println("No es correcta la autenticación");
-    }
+    }*/
 
 
   }
