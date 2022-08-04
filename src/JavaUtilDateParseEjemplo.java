@@ -37,9 +37,13 @@ public class JavaUtilDateParseEjemplo {
         System.out.println("Tu fecha es igual a la actual");
       }
 
-
     } catch (ParseException e) {
-      e.printStackTrace();
+      //e.printStackTrace();
+      //Otra solución de manejo de errores
+      System.err.println("La fecha tiene un formato incorrecto: " + e.getMessage());
+      System.err.println("El formato debe ser 'yy-MM-dd'");
+      //System.exit(1);
+      main( args );
     }
 
 

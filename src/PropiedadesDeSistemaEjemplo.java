@@ -1,0 +1,27 @@
+import java.util.Properties;
+
+public class PropiedadesDeSistemaEjemplo {
+  public static void main(String[] args) {
+    //googlear "system java getProperties" para más información
+    String username = System.getProperty("user.name");
+    System.out.println("username = " + username);
+    
+    String home = System.getProperty("user.home");
+    System.out.println("home = " + home);
+    
+    String workspace = System.getProperty("user.dir");
+    System.out.println("workspace = " + workspace);
+
+    String javaVersion = System.getProperty("java.version");
+    System.out.println("javaVersion = " + javaVersion);
+    
+    String lineSeparator = System.getProperty("line.separator");
+    System.out.println("lineSeparator = " + lineSeparator + "linea nueva");
+
+    //De esta forma imprime la lista completa de la configuraciones
+    Properties p = System.getProperties();
+    p.list(System.out);
+    
+    
+  }
+}
