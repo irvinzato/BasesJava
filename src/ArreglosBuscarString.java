@@ -13,7 +13,7 @@ public class ArreglosBuscarString {
     System.out.println("Ingresa el nombre a buscar:");
     String word = s.next();
     int i = 0;
-    while( i < a.length && !a[i].equalsIgnoreCase(word) ) {
+    while( i < a.length && !a[i].equalsIgnoreCase(word) ) { //Las 2 deben ser true para que entre
       i++;
     }
     if( i == a.length) {
